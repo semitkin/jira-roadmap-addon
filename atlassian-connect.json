@@ -1,15 +1,15 @@
 {
-    "key": "jira-activity-nimbletest5",
-    "name": "JIRA Project Activity (Test)",
-    "description": "A Connect add-on that displays JIRA projects in a table",
+    "key": "jira-roadmap-addon",
+    "name": "NC Roadmap (add-on test)",
+    "description": "NimbleCommerce Roadmap Testing Add-on",
     "vendor": {
         "name": "Atlassian Developer Relations",
         "url": "https://developer.atlassian.com/"
     },
-    "baseUrl": "https://24b06ce5.ngrok.io",
+    "baseUrl": "https://jira-roadmap-addon.herokuapp.com",
     "links": {
-        "self": "https://24b06ce5.ngrok.io/atlassian-connect.json",
-        "homepage": "https://24b06ce5.ngrok.io/atlassian-connect.json"
+        "self": "https://jira-roadmap-addon.herokuapp.com/atlassian-connect.json",
+        "homepage": "https://jira-roadmap-addon.herokuapp.com/atlassian-connect.json"
     },
     "authentication": {
         "type": "jwt"
@@ -25,12 +25,12 @@
         "generalPages": [
 
 			 {
-				 "key": "activity",
+				 "key": "roadmap",
 				 "location": "system.top.navigation.bar",
 				 "name": {
 					 "value": "Roadmap (add-on test)"
 				 },
-				 "url": "/activity",
+				 "url": "/roadmap",
 				 "conditions": [{
 					 "condition": "user_is_logged_in"
 				 }]

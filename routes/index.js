@@ -28,8 +28,8 @@ module.exports = function (app, addon) {
         }
     );*/
 	
-	app.get('/activity', addon.authenticate(), function(req, res) {
-     res.render('activity', { title: "Roadmap (add-on test)" });
+	app.get('/roadmap', addon.authenticate(), function(req, res) {
+     res.render('roadmap', { title: "Roadmap (add-on test)" });
 	});
 
     // Add any additional route handlers you need for views or REST resources here...
