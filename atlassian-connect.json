@@ -1,0 +1,40 @@
+{
+    "key": "jira-activity-nimbletest5",
+    "name": "JIRA Project Activity (Test)",
+    "description": "A Connect add-on that displays JIRA projects in a table",
+    "vendor": {
+        "name": "Atlassian Developer Relations",
+        "url": "https://developer.atlassian.com/"
+    },
+    "baseUrl": "https://24b06ce5.ngrok.io",
+    "links": {
+        "self": "https://24b06ce5.ngrok.io/atlassian-connect.json",
+        "homepage": "https://24b06ce5.ngrok.io/atlassian-connect.json"
+    },
+    "authentication": {
+        "type": "jwt"
+    },
+    "lifecycle": {
+        // atlassian-connect-express expects this route to be configured to manage the installation handshake
+        "installed": "/installed"
+    },
+    "scopes": [
+        "READ"
+    ],
+    "modules": {
+        "generalPages": [
+
+			 {
+				 "key": "activity",
+				 "location": "system.top.navigation.bar",
+				 "name": {
+					 "value": "Roadmap (add-on test)"
+				 },
+				 "url": "/activity",
+				 "conditions": [{
+					 "condition": "user_is_logged_in"
+				 }]
+			 }
+		 ]
+    }
+}

@@ -1,0 +1,59 @@
+/* add-on styles */
+.intro-header h1 {
+  font-size: 48px;
+  line-height: 60px;
+  padding-top: 20px;
+}
+.intro-header p.subtitle {
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.main-panel .aui-page-panel-item {
+  padding: 20px 40px 20px 0;
+  height: 100px;
+}
+.table {
+	display: table;
+}
+
+.tr, .thead {
+	display: table-row-group;
+}
+
+.th {
+	font-weight: bold;
+}
+
+.td, .th {
+	display: table-cell;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 5px 5px 5px;
+}
+
+.tr-sub {
+	/*border: 1px solid red;*/
+	display: table-row;
+	background-color: rgb(255, 244, 206);
+	font-size: 85%;
+	/*display: none;*/
+}
+.tr .tr-sub{
+	cursor: default;
+}
+
+.aui-avatar img {
+	display: inline;
+}
+
+.summary {
+}
+
+.hidden {
+	display: none;
+}
+
+.plus {
+	cursor: pointer;
+}

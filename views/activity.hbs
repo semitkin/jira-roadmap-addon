@@ -1,0 +1,36 @@
+{{!< layout}}
+ <header class="aui-page-header">
+     <div class="aui-page-header-inner">
+         <div class="aui-page-header-main intro-header">
+             <h1>{{title}}</h1>
+         </div>
+     </div>
+ </header>
+
+ <div class="aui-page-panel main-panel">
+     <div class="aui-page-panel-inner">
+         <section class="aui-page-panel-item" style='padding: 20px 40px 20px 40px;'>
+             <div class="aui-group">
+                 <div class="aui-item">
+                     <div class="projects">
+                     </div>
+					 Core team: 
+					 <select id='team' class='select2' onChange='updateTable(this.value);'>
+						<option value=''>All</option>
+						<option value='Core team 1'>Core team 1</option>
+						<option value='Core team 2'>Core team 2</option>
+					 </select>
+					 <!--
+			        <aui-select name="nc-team" can-create-values=false no-empty-value=true change='updateTable(this.value);'>
+						<aui-option value=''>All</aui-option>
+						<aui-option value='Core team 1'>Core team 1</aui-option>
+						<aui-option value='Core team 2'>Core team 2</aui-option>
+					</aui-select>
+					 -->
+                     <div class="issues">
+                     </div>
+				 </div>
+             </div>
+         </section>
+     </div>
+ </div>
