@@ -86,6 +86,7 @@ $(function() {
 		//var jql = 'Sprint = 28 '+ (team ? 'AND "NC Team" = "'+team+'"' : '') + ' AND status not in ("ready for merge", Done, Closed, Resolved, "In QA Review") AND project = "NimbleCommerce Core" ORDER BY assignee ASC, priority DESC, remainingEstimate DESC, summary ASC, key ASC';
 		
 		var jql = /*"issuekey = NA-123 AND */"issuetype=Epic " + (team ? 'AND "NC Team" = "'+team+'"' : '') + ' AND status not in ("On Hold", Done, Closed, Resolved) ORDER BY priority DESC, "NC Team" ASC, remainingEstimate DESC, summary ASC, key ASC';
+		alert(jql);
 	
 	var params = {jql: jql};
  
